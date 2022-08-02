@@ -1,0 +1,51 @@
+.main_div {
+    border: 1px solid black;
+    height: 50px;
+    background-color: gray;
+    border-radius: 3px;
+
+}
+
+.wrapper_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left_div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 5px;
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+}
+
+.left_div p {
+    margin: 4px;
+}
+
+.center_div {
+    flex: 10;
+    text-align: center;
+    margin-top: 4px;
+    
+}
+
+.headings {
+    margin: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.right_div {
+    margin-right: 15px;
+    margin-top: 6px;
+}
+
+.icons {
+    margin: 10px;
+    cursor: pointer;
+}
