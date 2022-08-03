@@ -1,0 +1,33 @@
+.payment_div {
+    margin-top: 100px;
+}
+.img {
+    border: 1px solid gray;
+    height: 2rem;
+    width: 80px;
+    border-radius: 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.inpost_div {
+    height: 40px;
+    width: 150px;
+    display: flex;
+    /* display: inline-block; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 0.5px solid gray;
+    margin: 10px;
+    border-radius: 15px;
+   
+}
+
+.inpost_img {
+    height: 40px;
+    width: 50px;
+    margin: 10px;
+    margin-left: 1px;
+
+}

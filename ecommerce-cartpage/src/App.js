@@ -16,8 +16,11 @@ function App() {
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
-      if (user) setUser(true);
-      else setUser(false);
+      if (user) {
+        setUser(true);
+      } else {
+        setUser(false);
+      }
     });
   }, []);
 
@@ -27,7 +30,6 @@ function App() {
         {user ? (
           <>
             <Navebar />
-            <LogOut />
 
             <Routes>
               <Route path="/" element={<Home />} />
@@ -35,6 +37,7 @@ function App() {
               <Route path="womens" element={<Womens />} />
               <Route path="kids" element={<Kids />} />
             </Routes>
+            <LogOut />
           </>
         ) : (
           <>

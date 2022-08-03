@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import { auth } from "../../firebase";
 import "./logIn.css";
@@ -10,13 +10,10 @@ const LogIn = () => {
   const handleSubmit = async () => {
     if (!email || !password) {
       alert("Please fill all the Fields");
+      return;
     }
     try {
-      const result = await createUserWithEmailAndPassword(
-        auth,
-        email,
-        password
-      );
+      const result = await signInWithEmailAndPassword(auth, email, password);
       console.warn(result);
       alert(`Login successful ${result.user.email}`);
     } catch (error) {
